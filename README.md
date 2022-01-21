@@ -11,5 +11,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## JSON-server
 
 - Run `npm i -g json-server`
-- Run `json-server --watch db.json`
+- Run `json-server --watch --port 3001 db.json`
 - Navigate to `localhost:3000` to see `db.json`
