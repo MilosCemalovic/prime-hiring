@@ -1,0 +1,32 @@
+{
+  "developers": [
+    {
+      "id": "1",
+      "name": "Miloš Ćemalović",
+      "email": "miloscemalovicnew@gmail.com",
+      "phone": "0038162327929",
+      "location": "Belgrade, Serbia",
+      "picture": "https://media-exp1.licdn.com/dms/image/C5603AQEc4IiWVT3Z4w/profile-displayphoto-shrink_800_800/0/1631818092222?e=1648080000&v=beta&t=sG0Wiudcck4k6P7MidotS08rTuCWBwoIeWpVIFGvhJE",
+      "price": 5,
+      "technology": "Javascript",
+      "description": "Junior Angular Developer",
+      "experience": "1",
+      "native": "Serbian",
+      "linkedin": "https://www.linkedin.com/in/miloš-ćemalović-3a54423"
+    },
+    {
+      "id": "2",
+      "name": "Đura Petrić",
+      "email": "vis13@gmail.com",
+      "phone": "0030898646698",
+      "location": "Sofia, Bulgaria",
+      "picture": "https://media-exp1.licdn.com/dms/image/C5603AQEDBDU61x3CbQ/profile-displayphoto-shrink_800_800/0/1552918012627?e=1648080000&v=beta&t=mfXs0G4hD1_1rfMcn5jQA7ALslFYtDTkaA0mD_4TMOk",
+      "price": "25",
+      "technology": "Java",
+      "description": "Software Engineer Teamlead",
+      "experience": "2",
+      "native": "Bulgarian",
+      "linkedin": ""
+    }
+  ]
+}

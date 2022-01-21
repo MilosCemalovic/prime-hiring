@@ -1,0 +1,66 @@
+<h2 class="text-center my-2">Developers list</h2>
+
+<div class="flex flex-wrap justify-content-center">
+  <p-card *ngFor="let developer of developers" styleClass="m-3 p-shadow-5" [style]="{width: '30rem', height: '35rem'}">
+    <div class="flex justify-content-end">
+      <button type="button" pButton class="mr-2" icon="pi pi-pencil" (click)="editDeveloper(developer)"></button>
+      <button type="button" pButton icon="pi pi-trash" (click)="deleteDeveloper(developer.id)"></button>
+    </div>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Name</span>
+      <span>{{developer.name}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Email</span>
+      <span>{{developer.email}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Phone number</span>
+      <span>{{developer.phone}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Location</span>
+      <span>{{developer.location}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Profile picture</span>
+      <img *ngIf="developer.picture" [src]="developer.picture" alt="developer's picture" width="30" height="30">
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Price per hour</span>
+      <span>{{developer.price}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Technology</span>
+      <span>{{developer.technology}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Description</span>
+      <span>{{developer.description}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Years of experience</span>
+      <span>{{developer.experience}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Native language</span>
+      <span>{{developer.native}}</span>
+    </p>
+
+    <p class="flex my-3 align-items-center justify-content-between">
+      <span>Linkedin profile</span>
+      <span class="text-right">{{developer.linkedin}}</span>
+    </p>
+  </p-card>
+
+</div>

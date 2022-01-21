@@ -1,0 +1,77 @@
+<h2 class="text-center mt-4">Developers data</h2>
+
+<div class="p-4">
+
+  <form [formGroup]="developerForm" (ngSubmit)="onSubmit()">
+
+    <input [(ngModel)]="developersService.developer.id" type="hidden" formControlName="id">
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+      <input [(ngModel)]="developersService.developer.name" type="text" pInputText formControlName="name"
+        placeholder="Name">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-at"></i></span>
+      <input [(ngModel)]="developersService.developer.email" type="email" pInputText formControlName="email"
+        placeholder="Email">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-phone"></i></span>
+      <input [(ngModel)]="developersService.developer.phone" type="number" pInputText formControlName="phone"
+        placeholder="Phone number">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-map-marker"></i></span>
+      <input [(ngModel)]="developersService.developer.location" type="text" pInputText formControlName="location"
+        placeholder="Location">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-reddit"></i></span>
+      <input [(ngModel)]="developersService.developer.picture" type="text" pInputText formControlName="picture"
+        placeholder="Profile picture (could be a simple url)">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon">€</span>
+      <input [(ngModel)]="developersService.developer.price" type="number" pInputText formControlName="price"
+        placeholder="Price per hour">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-server"></i></span>
+      <p-dropdown [(ngModel)]="developersService.developer.technology" placeholder="Technology" [options]="technologies"
+        formControlName="technology"></p-dropdown>
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-comment"></i></span>
+      <input [(ngModel)]="developersService.developer.description" type="text" pInputText formControlName="description"
+        placeholder="Description">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-id-card"></i></span>
+      <input [(ngModel)]="developersService.developer.experience" type="text" pInputText formControlName="experience"
+        placeholder="Experience">
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-home"></i></span>
+      <p-dropdown [(ngModel)]="developersService.developer.native" placeholder="Native language" [options]="languages"
+        formControlName="native"></p-dropdown>
+    </div>
+
+    <div class="p-inputgroup mb-2">
+      <span class="p-inputgroup-addon"><i class="pi pi-linkedin"></i></span>
+      <input [(ngModel)]="developersService.developer.linkedin" type="text" pInputText formControlName="linkedin"
+        placeholder="Linkedin profile link">
+    </div>
+
+    <button pButton pRipple type="submit" label="Enter" [disabled]="!developerForm.valid"></button>
+  </form>
+</div>
