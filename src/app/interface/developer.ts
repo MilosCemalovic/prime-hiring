@@ -8,7 +8,7 @@ export interface Developer {
   price: number
   technology: string
   description?: string
-  experience: string
+  experience: number
   native: string
   linkedin?: string
 }
