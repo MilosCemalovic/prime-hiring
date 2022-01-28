@@ -13,3 +13,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Run `npm i -g json-server`
 - Run `json-server --watch --port 3001 db.json`
 - Navigate to `localhost:3001` to see `db.json`
+
+## About
+
+Project functionalities 
+- CREATE, READ, UPDATE and DELETE
+
+Using
+- HTTP calls to JSON server
+- PrimeNG (Menubar, Card, InputText, Dropdown and Button)
+- Prime flex
+- Prime icons
+- Reactive forms
+- Router
